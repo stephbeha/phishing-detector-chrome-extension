@@ -1,0 +1,9 @@
+{
+  "model_name": "Logistic Regression",
+  "features": 5000,
+  "ngram_range": [
+    1,
+    2
+  ],
+  "accuracy": "See training output"
+}

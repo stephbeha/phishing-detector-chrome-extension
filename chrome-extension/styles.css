@@ -1,0 +1,16 @@
+/* Additional styles for Phishing Detector extension */
+
+.phishing-detector-badge {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  max-width: 350px;
+  background: #1a1a2e;
+  border: 2px solid #444;
+  border-radius: 12px;
+  padding: 15px;
+  z-index: 10000;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 13px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}

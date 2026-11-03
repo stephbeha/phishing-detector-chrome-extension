@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #1a1a2e;
+      color: #fff;
+      margin: 0;
+    }
+    h2 {
+      margin: 0 0 15px 0;
+      color: #00d9ff;
+      font-size: 18px;
+      text-align: center;
+    }
+    .status {
+      text-align: center;
+      padding: 15px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .status-score {
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .status-text {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    .indicators {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    .indicator {
+      padding: 8px;
+      margin: 5px 0;
+      background: rgba(255,255,255,0.05);
+      border-radius: 6px;
+      border-left: 3px solid #666;
+      font-size: 12px;
+    }
+    .indicator.high { border-left-color: #dc3545; }
+    .indicator.medium { border-left-color: #ffc107; }
+    .indicator.low { border-left-color: #28a745; }
+    .indicator-name { font-weight: bold; color: #00d9ff; }
+    .indicator-severity {
+      float: right;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .sev-high { background: #dc3545; }
+    .sev-medium { background: #ffc107; color: #000; }
+    .sev-low { background: #28a745; }
+    .no-data {
+      text-align: center;
+      color: #888;
+      padding: 20px;
+    }
+    .refresh-btn {
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      background: linear-gradient(135deg, #00d9ff, #0099cc);
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .refresh-btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <h2>Phishing Detector</h2>
+
+  <div id="content">
+    <div class="no-data">
+      Open an email in Gmail to analyze it
+    </div>
+  </div>
+
+  <button class="refresh-btn" onclick="location.reload()">Refresh</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
